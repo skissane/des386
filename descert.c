@@ -6,7 +6,7 @@
 static void get8 (unsigned char *);
 static void put8 (unsigned char *);
 
-main()
+int main()
 {
 	unsigned char key[8],plain[8],cipher[8],work[8];
 	int test;

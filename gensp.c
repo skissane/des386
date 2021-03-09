@@ -88,7 +88,7 @@ static unsigned char sbox[8][64] = {
 
 int desinit(int);
 
-main(argc,argv)
+int main(argc,argv)
 int argc;
 char *argv[];
 {
@@ -110,7 +110,7 @@ char *argv[];
 		break;
 	default:
 		printf("Invalid code %s\n",argv[1]);
-		exit(1);
+		return 1;
 	}
 
 	desinit(0);

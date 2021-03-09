@@ -19,3 +19,8 @@ gensp: gensp.c
 
 deskey.o: deskey.c des.h
 desport.o: desport.c des.h
+
+clean:
+	rm -f *.o descert descycle destime gensp dessp.c
+
+.PHONY: certify clean

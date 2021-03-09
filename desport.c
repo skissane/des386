@@ -142,9 +142,9 @@ extern unsigned long Spbox[8][64];		/* Combined S and P boxes */
 }
 /* Encrypt or decrypt a block of data in ECB mode */
 void
-des(ks,block)
-unsigned long ks[16][2];	/* Key schedule */
-unsigned char block[8];		/* Data block */
+des(
+unsigned long ks[16][2],	/* Key schedule */
+unsigned char block[8])		/* Data block */
 {
 	unsigned long left,right,work;
 	

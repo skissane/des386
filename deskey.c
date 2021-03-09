@@ -50,11 +50,10 @@ static int bytebit[] = {
 /* Generate key schedule for encryption or decryption
  * depending on the value of "decrypt"
  */
-void
-deskey(k,key,decrypt)
-unsigned long k[16][2];		/* Key schedule array */
-unsigned char *key;		/* 64 bits (will use only 56) */
-int decrypt;			/* 0 = encrypt, 1 = decrypt */
+void deskey(
+unsigned long k[16][2],		/* Key schedule array */
+unsigned char *key,		/* 64 bits (will use only 56) */
+int decrypt)			/* 0 = encrypt, 1 = decrypt */
 {
 	unsigned char pc1m[56];		/* place to modify pc1 into */
 	unsigned char pcr[56];		/* place to rotate pc1 into */

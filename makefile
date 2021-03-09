@@ -1,7 +1,7 @@
 # Makefile for portable C version under UNIX
 
 CC = cc
-CFLAGS = -std=gnu11 -Wall -Werror
+CFLAGS = -std=gnu11 -Wall -Werror -Wold-style-definition
 
 certify: descert testdata
 	./descert < testdata

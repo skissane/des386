@@ -88,9 +88,9 @@ static unsigned char sbox[8][64] = {
 
 int desinit(int);
 
-int main(argc,argv)
-int argc;
-char *argv[];
+int main(
+int argc,
+char *argv[])
 {
 	int i,j,k;
 	int shifts;
@@ -137,8 +137,7 @@ char *argv[];
  * "mode" no longer used; only standard DES supported
  */
 int
-desinit(mode)
-int mode;
+desinit(int mode)
 {
 	unsigned char pbox[32];
 	int p,i,s,j,rowcol;

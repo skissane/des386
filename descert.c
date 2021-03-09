@@ -6,7 +6,7 @@
 static void get8 (unsigned char *);
 static void put8 (unsigned char *);
 
-int main()
+int main(int argc, char **argv)
 {
 	unsigned char key[8],plain[8],cipher[8],work[8];
 	int test;
@@ -47,9 +47,8 @@ int main()
 	}
 	return 0;
 }
-static void
-get8(cp)
-unsigned char *cp;
+
+static void get8(unsigned char *cp)
 {
 	int i,t;
 
@@ -60,9 +59,7 @@ unsigned char *cp;
 		*cp++ = t;
 	}
 }
-static void
-put8(cp)
-unsigned char *cp;
+static void put8(unsigned char *cp)
 {
 	int i;
 

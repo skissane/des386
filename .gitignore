@@ -1,0 +1,4 @@
+*.o
+/descert
+/dessp.c
+/gensp
